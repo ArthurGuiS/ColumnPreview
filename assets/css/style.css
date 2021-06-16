@@ -1,3 +1,14 @@
-section {
+body {
     background-color: var(--cinza);
+}
+
+section {
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    border: 1px solid black;
+    margin: 10% 20%;
+    
 }
