@@ -3,12 +3,81 @@ body {
 }
 
 section {
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card {
     display: flex;
     border: 1px solid black;
-    margin: 10% 20%;
+    border-radius: 10px;
+    width: 70%;
     
+}
+
+.sedan {
+    background-color: var(--laranja);
+    padding: 3rem;
+}
+
+.sedan__imagem, .suv__imagem, .luxury__imagem {
+    margin-bottom: 2rem;
+}
+
+.suv {
+    background-color: var(--cyan);
+    padding: 3rem;
+}
+
+.luxury {
+    background-color: var(--dark-cyan);
+    padding: 3rem;
+}
+
+.sedan__titulo, .suv__titulo, .luxury__titulo {
+    font-family: var(--font-big-shoulders);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.sedan__texto, .suv__texto, .luxury__texto {
+    font-family: var(--font-lexend);
+    color: white;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.sedan__botao {
+    color: var(--laranja);
+}
+
+.sedan__botao:hover {
+    color: white;
+    background-color: var(--laranja);
+    cursor: pointer;
+}
+
+
+.suv__botao {
+    color: var(--cyan);
+}
+
+.suv__botao:hover {
+    color: white;
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+
+.luxury__botao {
+    color: var(--dark-cyan);
+}
+
+.luxury__botao:hover {
+    color: white;
+    background-color: var(--dark-cyan);
+    cursor: pointer;
 }
